@@ -1,34 +1,28 @@
-# helloworld
+# Vue + Cordova + TS Template
+这个模板没有使用Webpack脚手架，个人不喜欢也不习惯Webpack
 
-## Project setup
+## Project setup 项目初始化
 ```
+npm install -g cordova
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+这里不讲Cordova的环境配置，自行谷歌或度娘
 
-### Compiles and minifies for production
+## Platform, Build, Run
+electron是桌面应用
 ```
-npm run build
-```
+cordova platform add android --save
+cordova platform add ios --save
+cordova platform add electron --save
 
-### Run your unit tests
-```
-npm run test:unit
-```
+cordova build android
+cordova build ios
+cordova build electron
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+cordoca build                   // build all platform
 
-### Lints and fixes files
+cordova run android
+cordova run electron
+cordova run ios
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
